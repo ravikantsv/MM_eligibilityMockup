@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_eligibility_desc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.mm_eligibilitymockup.EligibilityDesc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eligibility_desc"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textView1"/>
+
+    <Button
+        android:text="@string/join_the_study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/button_padding"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin ="50dp"
+        android:id="@+id/join_study"
+        android:background="@drawable/button_border"
+        android:onClick="choose18orAbove"/>
+</RelativeLayout>
