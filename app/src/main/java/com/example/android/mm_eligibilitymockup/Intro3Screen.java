@@ -2,6 +2,7 @@ package com.example.android.mm_eligibilitymockup;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -56,6 +57,8 @@ public class Intro3Screen extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabDots);
+        tabLayout.setupWithViewPager(mViewPager, true);
 
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -213,14 +216,14 @@ public class Intro3Screen extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "SECTION 1";
-                case 1:
-                    return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
-            }
+//            switch (position) {
+//                case 0:
+//                    return "SECTION 1";
+//                case 1:
+//                    return "SECTION 2";
+//                case 2:
+//                    return "SECTION 3";
+//            }
             return null;
         }
 

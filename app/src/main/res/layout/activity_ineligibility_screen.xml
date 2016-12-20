@@ -10,35 +10,38 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.mm_eligibilitymockup.ineligibility_screen">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ineligibility_text"
-        android:textSize="18sp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="40dp"
-        android:id="@+id/ineligibilityText"/>
 
     <TextView
+        android:id="@+id/ineligibilityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/war_on_melanoma"
-        android:textSize="18sp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="40dp"
-        android:id="@+id/war_on_melanoma"/>
+        android:text="@string/ineligibility_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/war_on_melanoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/war_on_melanoma"
+        android:textSize="18sp" />
 
     <Button
-        android:text="@string/start_mapping"
+        android:id="@+id/join_study"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:padding="@dimen/button_padding"
-        android:background="@drawable/button_border"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/join_study"
-        android:onClick="LaunchIntroScreen"/>
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_border"
+        android:onClick="LaunchIntroScreen"
+        android:padding="@dimen/button_padding"
+        android:text="@string/start_mapping"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
 
 </LinearLayout>

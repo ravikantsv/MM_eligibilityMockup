@@ -13,7 +13,7 @@
     Enjoy and Happy Mapping!</string>
     <string name="war_on_melanoma"><a href="https://www.ohsu.edu/xd/health/services/dermatology/war-on-melanoma/">War on Melanoma</a></string>
     <string name="start_mapping">  Start Mapping  </string>
-    <string name="title_activity_intro3_screen">Intro3Screen</string>
+    <string name="title_activity_intro3_screen"><b><font color="#f5f5f5" size='20'>Mole</font></b><font color="#090a0a" size='20'>Mapper</font></string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="welcome_to_mole_mapper">Welcome to Mole Mapper</string>
@@ -28,5 +28,6 @@
          </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_consent">Start Consent</string>
 </resources>
 

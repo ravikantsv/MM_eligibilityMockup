@@ -11,23 +11,25 @@
     tools:context="com.example.android.mm_eligibilitymockup.EligibilityDesc">
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/eligibility_desc"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:id="@+id/textView1"/>
+        android:textStyle="bold" />
 
     <Button
-        android:text="@string/join_the_study"
+        android:id="@+id/join_study"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding = "@dimen/button_padding"
-        android:gravity="center_vertical"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin ="50dp"
-        android:id="@+id/join_study"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
         android:background="@drawable/button_border"
-        android:onClick="choose18orAbove"/>
+        android:gravity="center_vertical"
+        android:onClick="choose18orAbove"
+        android:padding="@dimen/button_padding"
+        android:text="@string/join_the_study"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
 </RelativeLayout>

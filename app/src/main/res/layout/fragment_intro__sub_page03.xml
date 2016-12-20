@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What is Involved"
-            android:textSize="40sp"
+            android:textSize="25sp"
             android:gravity="center_horizontal"
             android:layout_marginTop="20dp"/>
 
@@ -35,7 +35,9 @@
             android:padding="@dimen/button_padding"
             android:id="@+id/start_mapping"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp" />
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            />
     </LinearLayout>
 
 </FrameLayout>
