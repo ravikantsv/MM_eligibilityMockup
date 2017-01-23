@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.mm_eligibilitymockup">
+
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
@@ -28,17 +29,16 @@
         </activity>
         <activity
             android:name=".Above18Screen"
-            android:label="Eligibility">
-        </activity>
+            android:label="Eligibility"></activity>
         <activity
             android:name=".ineligibility_screen"
-            android:label="Eligibility">
-        </activity>
+            android:label="Eligibility"></activity>
         <activity
             android:name=".Intro3Screen"
             android:label="@string/title_activity_intro3_screen"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ReconsentScreen"
+            android:label="Re-Consent"></activity>
     </application>
 
 </manifest>

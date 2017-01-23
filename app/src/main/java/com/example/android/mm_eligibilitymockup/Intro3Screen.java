@@ -1,5 +1,7 @@
 package com.example.android.mm_eligibilitymockup;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
@@ -11,12 +13,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -111,6 +115,11 @@ public class Intro3Screen extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void launchReconsent(View view) {
+        Intent intent = new Intent(this, ReconsentScreen.class);
+        startActivity(intent);
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -151,8 +160,8 @@ public class Intro3Screen extends AppCompatActivity {
 //                TextView textView = (TextView) rootView.findViewById(R.id.video_overview_title);
 //                textView.setText("ABCD");
                 WebView webView;
-                String YouTubeVideoEmbedCode = "<html><body><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/PB_XDZyZ-EE\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
-//                String YouTubeVideoEmbedCode = "<html><body><iframe width=\"260\" height=\"315\" src=\"https://www.youtube.com/embed/PB_XDZyZ-EE\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
+//                String YouTubeVideoEmbedCode = "<html><body><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/PB_XDZyZ-EE\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
+                String YouTubeVideoEmbedCode = "<html><body><iframe src=\"https://www.youtube.com/embed/PB_XDZyZ-EE\" frameborder=\"0\" allowfullscreen></iframe></body></html>";
                 webView = (WebView) rootView.findViewById(R.id.video_overview);
                 webView.setWebViewClient(new WebViewClient() {
                     @Override
@@ -161,7 +170,12 @@ public class Intro3Screen extends AppCompatActivity {
                     }
                 });
 //
+
                 WebSettings webSettings = webView.getSettings();
+                // fit the width of screen
+                webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+                // remove a weird white line on the right size
+                webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
                 webSettings.setLoadWithOverviewMode(true);
                 webSettings.setUseWideViewPort(true);
                 webSettings.setJavaScriptEnabled(true);

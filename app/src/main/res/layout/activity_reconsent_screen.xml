@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reconsent_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.mm_eligibilitymockup.ReconsentScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight = "0">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Re_Consent"
+        android:textSize="25sp"
+        android:textColor="@color/activity_title_color"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_consent_body"
+        android:textSize="18sp"
+        android:textColor="@android:color/tertiary_text_light"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learn More"
+        android:textSize="18sp"
+        android:textColor="@color/activity_title_color"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:text="Leave Study"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_red_dark"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:text="Continue Sharing Data"
+                android:textAllCaps="false"
+                android:textColor="@color/activity_title_color"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
